@@ -58,7 +58,11 @@ func main() {
 
 	myZoo = append(myZoo, &Leo)
 
-	Tweety := zoo.Pigeon{Name: "Tweety"}
+	bird := zoo.Bird{}
+
+	bird.SetClassification("algo")
+
+	Tweety := zoo.Pigeon{Bird: bird, Name: "Tweety"}
 
 	TwLoc := zoo.LatLog{130.3, 1033.4}
 
